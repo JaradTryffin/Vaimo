@@ -1,0 +1,126 @@
+.main__footer {
+  width: 336pt;
+  height: 256pt;
+  margin-left: 12pt;
+  margin-right: 12pt;
+  margin-bottom: 36pt;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.footer__shipping {
+  margin-top: 28pt;
+  margin-left: 26pt;
+}
+.clamp {
+  width: 145pt;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.total {
+  margin-top: 28pt;
+  margin-right: 26pt;
+  font-size: 16pt;
+  font-family: 700;
+}
+.footer__shipping > p {
+  margin-bottom: 12pt;
+  font-size: 14pt;
+  color: #999999;
+  font-weight: 400;
+}
+.footer__shipping > span {
+  margin-right: 12pt;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24pt;
+}
+.btn__login {
+  width: 284pt;
+  height: 40pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff6600;
+  color: #ffffff;
+  border-radius: 40px;
+  text-decoration: none;
+  margin-bottom: 12pt;
+  font-size: 14pt;
+  font-weight: 500;
+}
+.btn__contact > span {
+  padding-right: 12pt;
+}
+.btn__contact {
+  width: 284pt;
+  height: 40pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  border: 2px outset #ff6600;
+  text-decoration: none;
+  color: #ff6600;
+  font-size: 14pt;
+  font-weight: 400;
+}
+/* desktop */
+@media screen and (min-width: 1320px) {
+  .main__footer {
+    margin-left: 24px;
+    width: 306px;
+    height: 350px;
+    margin-top: 48px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+  .footer {
+    margin-top: 15px;
+  }
+  .footer__shipping > p {
+    font-size: 14px;
+  }
+  .total {
+    width: 78px;
+    height: 50px;
+    font-size: 16px;
+    align-items: center;
+  }
+  .btn__login {
+    width: 258px;
+    height: 40px;
+  }
+  .btn__contact {
+    width: 258px;
+    height: 40px;
+  }
+  .clamp {
+    padding-right: 20px;
+  }
+}
+
+/* ipad */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main__footer {
+    margin-left: 35px;
+  }
+}
+/* ipad landscape */
+@media only screen and (min-width: 1024px) and (max-width: 1320px) {
+  .main__footer {
+    margin-top: 46px;
+    margin-right: 20px;
+  }
+}

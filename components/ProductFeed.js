@@ -39,7 +39,7 @@ function ProductFeed({ products }) {
         <div className="container">
             <meta content="width=device-width, initial-scale=1" name="viewport" />
             <div className="image__box">
-                <img src={products.product.gallery.["0"].main} alt="" />
+                <img src={products.product.gallery["0"].main} alt="" />
             </div>
 
             {/* infobox */}
@@ -70,7 +70,7 @@ function ProductFeed({ products }) {
                 <div className="heading">
                     <p>{products.product.name}</p>
                     <div className="heading__tag">
-                        <p>{products.product.tags.['0']}</p>
+                        <p>{products.product.tags['0']}</p>
                     </div>
                 </div>
 
@@ -101,8 +101,8 @@ function ProductFeed({ products }) {
 
                 <div className="price">
                     <div class="price__new">
-                        <p class="price__new__current">R {products.product.options.battery_accessories.price.value}0 - R {products.product.options.['1080p'].price.value}</p>
-                        <p class="price__new__old">R {products.product.options.battery_accessories.old_price.value} - R {products.product.options.['1080p'].old_price.value}</p>
+                        <p class="price__new__current">R {products.product.options.battery_accessories.price.value}0 - R {products.product.options['1080p'].price.value}</p>
+                        <p class="price__new__old">R {products.product.options.battery_accessories.old_price.value} - R {products.product.options['1080p'].old_price.value}</p>
                     </div>
                     <div class="price__options">
                         <p class="price__options__gray">/ Options</p>
@@ -147,14 +147,14 @@ function ProductFeed({ products }) {
                 <div className="products">
                     <p className="option">Options:</p>
                     <div className="product__options">
-                        <p>{products.product.options.['1080p'].label}</p>
-                        <p>{products.product.options.['4k'].label}</p>
+                        <p>{products.product.options['1080p'].label}</p>
+                        <p>{products.product.options['4k'].label}</p>
                         <p>{products.product.options.battery_accessories.label}</p>
 
                     </div>
                     <div className="product__prices">
-                        <p>{products.product.options.['1080p'].price.value}</p>
-                        <p>{products.product.options.['4k'].price.value}</p>
+                        <p>{products.product.options['1080p'].price.value}</p>
+                        <p>{products.product.options['4k'].price.value}</p>
                         <p>{products.product.options.battery_accessories.price.value}</p>
                     </div>
                     <div className="product__quantity">

@@ -8,10 +8,10 @@ function AddToBox( {products} ) {
     // const grandTotal = ((box1Value * products.product.options.['1080p'].price.value)+(box2Value * products.product.options.['4k'].price.value) + (box3Value + products.product.options.battery_accessories.price.value))
     const [totalPrice,setTotalPrice] = useState(0)
     let box1Value = useSelector((state) => state.counter.value)
-    let price1080p = products.product.options.['1080p'].price.value
+    let price1080p = products.product.options['1080p'].price.value
 
     let box2Value = useSelector((state) => state.boxtwo.value)
-    let price4k = products.product.options.['4k'].price.value
+    let price4k = products.product.options['4k'].price.value
 
     let box3Value = useSelector((state) => state.boxthree.value)
     let price_battery = products.product.options.battery_accessories.price.value
@@ -35,7 +35,6 @@ function AddToBox( {products} ) {
             <div className="btn">
                 <a className="btn__login" href="#">Login to Purchase</a>
                 <a className="btn__contact" href="#"><span><Image width={19} height={16} src={mail}/></span> Contact the supplier</a>
-
             </div>
             
         </div>
